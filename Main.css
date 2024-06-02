@@ -1,91 +1,100 @@
-.Box{
-    width: 500px;
+/* Base Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Box {
+    width: 90%;
+    max-width: 500px;
     border: 5px solid black;
     padding: 15px;
-    margin: 20px;
+    margin: 20px auto;
 }
 
-body{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
-}
-
-.Image1{
+.Image1, .Image2, .Image3, .Image4, .Image5 {
     width: 13%;
-    height: 13%;
-    margin-right: 20%;
-    white-space: nowrap;
-    border-radius: 5%;
-}
-
-.Image2{
-    width: 13%;
-    height: 13%;
-    margin-left: 30%;
+    height: auto;
     white-space: nowrap;
     border-radius: 5%;
     margin-top: 2%;
 }
 
-.Image3{
-    width: 13%;
-    height: 13%;
-    margin-right: 20%;
-    white-space: nowrap;
-    border-radius: 5%;
-    margin-top: 3%;
-
-}
-
-.Image4{
-    margin-top: -50%;
-    width: 10%;
-    height: 10%;
+.Image2, .Image4 {
     margin-left: 30%;
-    white-space: nowrap;
-    border-radius: 5%;
 }
 
-.Image5{
-    border-radius: 5%;
+.Image3 {
+    margin-right: 20%;
 }
 
-.SideText{
-    margin-top: -14%;
-    margin-left: 10%;
-}
-
-.SideText2{
-    margin-top: -15%;
-    margin-right: 10%;
-}
-
-.SideText3{
-    margin-top: -15%;
-    margin-left: 15%;
-}
-
-.SideText4{
-    margin-right: 10%;
-    margin-top: -13%;
-}
-
-.Sidetext5{
-    margin-top: -15%;
-    margin-left: 15%;
-}
-
-p{
+.SideText, .SideText2, .SideText3, .SideText4, .SideText5 {
+    margin-top: -10%;
     font-size: 120%;
 }
 
-.Offset1{
+.Offset1 {
     margin-left: 10%;
 }
 
-.TitleSpace{
+.TitleSpace {
     margin-top: 5%;
 }
 
-.hidden{
+.hidden {
     color: white;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .Box {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .Image1, .Image2, .Image3, .Image4, .Image5 {
+        width: 20%;
+        margin-top: 3%;
+    }
+
+    .Image2, .Image4 {
+        margin-left: 5%;
+    }
+
+    .Image3 {
+        margin-right: 5%;
+    }
+
+    .SideText, .SideText2, .SideText3, .SideText4, .SideText5 {
+        margin-top: -5%;
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 100%;
+    }
+
+    .Offset1 {
+        margin-left: 5%;
+    }
+}
+
+/* Further adjustments for smaller screens */
+@media (max-width: 480px) {
+    .Image1, .Image2, .Image3, .Image4, .Image5 {
+        width: 30%;
+        margin-top: 5%;
+    }
+
+    .SideText, .SideText2, .SideText3, .SideText4, .SideText5 {
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: 0;
+        font-size: 90%;
+    }
+
+    .Offset1 {
+        margin-left: 0;
+    }
+
+    .TitleSpace {
+        margin-top: 3%;
+    }
 }
