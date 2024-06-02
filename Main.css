@@ -1,6 +1,8 @@
 /* Base Styles */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 .Box {
@@ -9,6 +11,7 @@ body {
     border: 5px solid black;
     padding: 15px;
     margin: 20px auto;
+    text-align: center;
 }
 
 .Image1, .Image2, .Image3, .Image4, .Image5 {
@@ -16,21 +19,18 @@ body {
     height: auto;
     white-space: nowrap;
     border-radius: 5%;
-    margin-top: 2%;
+    display: block;
+    margin: 20px auto;
 }
 
-.Image2 {
-    margin-left: 30%;
+.SideText, .SideText2, .SideText3, .SideText4, .Sidetext5 {
+    text-align: left;
+    margin: 20px;
 }
 
-.Image4 {
-    margin-left: 30%;
-    margin-top: -50%;
-}
-
-.SideText, .SideText2, .SideText3, .SideText4, .SideText5 {
-    margin-top: -10%;
+p {
     font-size: 120%;
+    margin: 10px 0;
 }
 
 .Offset1 {
@@ -54,18 +54,11 @@ body {
 
     .Image1, .Image2, .Image3, .Image4, .Image5 {
         width: 20%;
-        margin-top: 3%;
+        margin: 15px auto;
     }
 
-    .Image2, .Image4 {
-        margin-left: 5%;
-    }
-
-    .SideText, .SideText2, .SideText3, .SideText4, .SideText5 {
-        margin-top: -5%;
-        margin-left: 5%;
-        margin-right: 5%;
-        font-size: 100%;
+    .SideText, .SideText2, .SideText3, .SideText4, .Sidetext5 {
+        margin: 15px 5%;
     }
 
     .Offset1 {
@@ -73,22 +66,19 @@ body {
     }
 }
 
-/* Further adjustments for smaller screens */
 @media (max-width: 480px) {
     .Image1, .Image2, .Image3, .Image4, .Image5 {
         width: 30%;
-        margin-top: 5%;
+        margin: 10px auto;
     }
 
-    .SideText, .SideText2, .SideText3, .SideText4, .SideText5 {
-        margin-top: 0;
-        margin-left: 0;
-        margin-right: 0;
-        font-size: 90%;
+    .SideText, .SideText2, .SideText3, .SideText4, .Sidetext5 {
+        margin: 10px 2%;
+        font-size: 100%;
     }
 
     .Offset1 {
-        margin-left: 0;
+        margin-left: 2%;
     }
 
     .TitleSpace {
