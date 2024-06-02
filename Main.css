@@ -1,109 +1,91 @@
-/* Container box styling */
-.Box {
-    max-width: 500px;
+.Box{
+    width: 500px;
     border: 5px solid black;
     padding: 15px;
-    margin: 20px auto; /* Center align the box */
+    margin: 20px;
 }
 
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
-/* Image styling */
-.Image {
+.Image1{
     width: 13%;
-    height: auto; /* Maintain aspect ratio */
+    height: 13%;
+    margin-right: 20%;
+    white-space: nowrap;
     border-radius: 5%;
-    margin-bottom: 2%;
 }
 
-/* Specific margins for images to achieve the original layout */
-.Image1 {
-    margin-right: 20%;
-}
-
-.Image2 {
+.Image2{
+    width: 13%;
+    height: 13%;
     margin-left: 30%;
+    white-space: nowrap;
+    border-radius: 5%;
+    margin-top: 2%;
 }
 
-.Image3 {
+.Image3{
+    width: 13%;
+    height: 13%;
     margin-right: 20%;
+    white-space: nowrap;
+    border-radius: 5%;
+    margin-top: 3%;
+
 }
 
-.Image4 {
+.Image4{
     margin-top: -50%;
     width: 10%;
+    height: 10%;
     margin-left: 30%;
+    white-space: nowrap;
+    border-radius: 5%;
 }
 
-.Image5 {
-    width: 100%; /* Assuming full width image */
+.Image5{
+    border-radius: 5%;
 }
 
-/* Side text styling */
-.SideText {
+.SideText{
     margin-top: -14%;
     margin-left: 10%;
 }
 
-.SideText2 {
+.SideText2{
     margin-top: -15%;
     margin-right: 10%;
 }
 
-.SideText3 {
+.SideText3{
     margin-top: -15%;
     margin-left: 15%;
 }
 
-.SideText4 {
+.SideText4{
+    margin-right: 10%;
     margin-top: -13%;
-    margin-right: 10%;
 }
 
-.Sidetext5 {
+.Sidetext5{
     margin-top: -15%;
     margin-left: 15%;
 }
 
-/* Paragraph styling */
-p {
-    font-size: 1.2em;
+p{
+    font-size: 120%;
 }
 
-.Offset1 {
+.Offset1{
     margin-left: 10%;
 }
 
-.TitleSpace {
+.TitleSpace{
     margin-top: 5%;
 }
 
-.hidden {
+.hidden{
     color: white;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .Image {
-        width: 25%;
-        margin: 5% 0; /* Adjust margins for smaller screens */
-    }
-    
-    .Image4 {
-        margin-top: -25%; /* Adjust for smaller screens */
-        width: 20%;
-    }
-    
-    .SideText, .SideText2, .SideText3, .SideText4, .Sidetext5 {
-        margin-top: 0;
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    .Box {
-        width: 90%;
-        margin: 10px auto; /* Adjust box width and margin for smaller screens */
-    }
 }
