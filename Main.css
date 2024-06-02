@@ -3,7 +3,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    text-align: center; /* Ensure everything starts centered */
+    text-align: center;
 }
 
 .Box {
@@ -12,29 +12,26 @@ body {
     border: 5px solid black;
     padding: 15px;
     margin: 20px auto;
-    text-align: center;
 }
 
 .Image1, .Image2, .Image3, .Image4, .Image5 {
-    width: 13%;
+    width: 20%;
     height: auto;
     white-space: nowrap;
     border-radius: 5%;
     margin: 20px auto;
+    display: block;
 }
 
 .SideText, .SideText2, .SideText3, .SideText4, .Sidetext5 {
-    margin: 20px;
+    margin: 20px auto;
+    max-width: 90%;
     text-align: left;
 }
 
 p {
     font-size: 120%;
     margin: 10px 0;
-}
-
-.Offset1 {
-    margin-left: 10%;
 }
 
 .TitleSpace {
@@ -47,40 +44,25 @@ p {
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
-    .Box {
-        width: 95%;
-        padding: 10px;
-    }
-
     .Image1, .Image2, .Image3, .Image4, .Image5 {
-        width: 20%;
+        width: 30%;
         margin: 15px auto;
     }
 
     .SideText, .SideText2, .SideText3, .SideText4, .Sidetext5 {
         margin: 15px 5%;
-        text-align: center; /* Center text for better readability */
-    }
-
-    .Offset1 {
-        margin-left: 5%;
     }
 }
 
 @media (max-width: 480px) {
     .Image1, .Image2, .Image3, .Image4, .Image5 {
-        width: 30%;
+        width: 40%;
         margin: 10px auto;
     }
 
     .SideText, .SideText2, .SideText3, .SideText4, .Sidetext5 {
         margin: 10px 2%;
         font-size: 100%;
-        text-align: center; /* Center text for better readability */
-    }
-
-    .Offset1 {
-        margin-left: 2%;
     }
 
     .TitleSpace {
