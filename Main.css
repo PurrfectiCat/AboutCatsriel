@@ -1,47 +1,79 @@
-/* Base Styles */
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
+/* Container box styling */
 .Box {
-    width: 90%;
     max-width: 500px;
     border: 5px solid black;
     padding: 15px;
-    margin: 20px auto;
+    margin: 20px auto; /* Center align the box */
 }
 
-img {
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Image styling */
+.Image {
+    width: 13%;
+    height: auto; /* Maintain aspect ratio */
     border-radius: 5%;
-    max-width: 100%;
-    height: auto;
+    margin-bottom: 2%;
 }
 
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    margin: 20px 0;
+/* Specific margins for images to achieve the original layout */
+.Image1 {
+    margin-right: 20%;
 }
 
-.container.reverse {
-    flex-direction: row-reverse;
+.Image2 {
+    margin-left: 30%;
 }
 
-.text-container {
-    flex: 1;
-    padding: 0 10px;
-    text-align: left;
-    max-width: 500px;
+.Image3 {
+    margin-right: 20%;
 }
 
+.Image4 {
+    margin-top: -50%;
+    width: 10%;
+    margin-left: 30%;
+}
+
+.Image5 {
+    width: 100%; /* Assuming full width image */
+}
+
+/* Side text styling */
+.SideText {
+    margin-top: -14%;
+    margin-left: 10%;
+}
+
+.SideText2 {
+    margin-top: -15%;
+    margin-right: 10%;
+}
+
+.SideText3 {
+    margin-top: -15%;
+    margin-left: 15%;
+}
+
+.SideText4 {
+    margin-top: -13%;
+    margin-right: 10%;
+}
+
+.Sidetext5 {
+    margin-top: -15%;
+    margin-left: 15%;
+}
+
+/* Paragraph styling */
 p {
-    font-size: 120%;
-    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.Offset1 {
+    margin-left: 10%;
 }
 
 .TitleSpace {
@@ -52,32 +84,26 @@ p {
     color: white;
 }
 
-/* Responsive Adjustments */
+/* Responsive adjustments */
 @media (max-width: 768px) {
-    .container {
-        flex-direction: column;
+    .Image {
+        width: 25%;
+        margin: 5% 0; /* Adjust margins for smaller screens */
     }
     
-    .container.reverse {
-        flex-direction: column;
+    .Image4 {
+        margin-top: -25%; /* Adjust for smaller screens */
+        width: 20%;
+    }
+    
+    .SideText, .SideText2, .SideText3, .SideText4, .Sidetext5 {
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: 0;
     }
 
-    .text-container {
-        text-align: center;
-        padding: 0 20px;
-    }
-
-    p {
-        font-size: 110%;
-    }
-}
-
-@media (max-width: 480px) {
-    p {
-        font-size: 100%;
-    }
-
-    .TitleSpace {
-        margin-top: 3%;
+    .Box {
+        width: 90%;
+        margin: 10px auto; /* Adjust box width and margin for smaller screens */
     }
 }
