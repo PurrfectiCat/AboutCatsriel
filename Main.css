@@ -1,91 +1,83 @@
-.Box{
-    width: 500px;
+/* Base Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.Box {
+    width: 90%;
+    max-width: 500px;
     border: 5px solid black;
     padding: 15px;
-    margin: 20px;
+    margin: 20px auto;
 }
 
-body{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
-}
-
-.Image1{
-    width: 13%;
-    height: 13%;
-    margin-right: 20%;
-    white-space: nowrap;
+img {
     border-radius: 5%;
+    max-width: 100%;
+    height: auto;
 }
 
-.Image2{
-    width: 13%;
-    height: 13%;
-    margin-left: 30%;
-    white-space: nowrap;
-    border-radius: 5%;
-    margin-top: 2%;
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
 }
 
-.Image3{
-    width: 13%;
-    height: 13%;
-    margin-right: 20%;
-    white-space: nowrap;
-    border-radius: 5%;
-    margin-top: 3%;
-
+.container.reverse {
+    flex-direction: row-reverse;
 }
 
-.Image4{
-    margin-top: -50%;
-    width: 10%;
-    height: 10%;
-    margin-left: 30%;
-    white-space: nowrap;
-    border-radius: 5%;
+.text-container {
+    flex: 1;
+    padding: 0 10px;
+    text-align: left;
+    max-width: 500px;
 }
 
-.Image5{
-    border-radius: 5%;
-}
-
-.SideText{
-    margin-top: -14%;
-    margin-left: 10%;
-}
-
-.SideText2{
-    margin-top: -15%;
-    margin-right: 10%;
-}
-
-.SideText3{
-    margin-top: -15%;
-    margin-left: 15%;
-}
-
-.SideText4{
-    margin-right: 10%;
-    margin-top: -13%;
-}
-
-.Sidetext5{
-    margin-top: -15%;
-    margin-left: 15%;
-}
-
-p{
+p {
     font-size: 120%;
+    margin: 10px 0;
 }
 
-.Offset1{
-    margin-left: 10%;
-}
-
-.TitleSpace{
+.TitleSpace {
     margin-top: 5%;
 }
 
-.hidden{
+.hidden {
     color: white;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    .container.reverse {
+        flex-direction: column;
+    }
+
+    .text-container {
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    p {
+        font-size: 110%;
+    }
+}
+
+@media (max-width: 480px) {
+    p {
+        font-size: 100%;
+    }
+
+    .TitleSpace {
+        margin-top: 3%;
+    }
 }
