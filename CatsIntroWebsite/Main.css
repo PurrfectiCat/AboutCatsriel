@@ -1,0 +1,91 @@
+.Box{
+    width: 500px;
+    border: 5px solid black;
+    padding: 15px;
+    margin: 20px;
+}
+
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.Image1{
+    width: 13%;
+    height: 13%;
+    margin-right: 20%;
+    white-space: nowrap;
+    border-radius: 5%;
+}
+
+.Image2{
+    width: 13%;
+    height: 13%;
+    margin-left: 30%;
+    white-space: nowrap;
+    border-radius: 5%;
+    margin-top: 2%;
+}
+
+.Image3{
+    width: 13%;
+    height: 13%;
+    margin-right: 20%;
+    white-space: nowrap;
+    border-radius: 5%;
+    margin-top: 3%;
+
+}
+
+.Image4{
+    margin-top: -50%;
+    width: 10%;
+    height: 10%;
+    margin-left: 30%;
+    white-space: nowrap;
+    border-radius: 5%;
+}
+
+.Image5{
+    border-radius: 5%;
+}
+
+.SideText{
+    margin-top: -14%;
+    margin-left: 10%;
+}
+
+.SideText2{
+    margin-top: -15%;
+    margin-right: 10%;
+}
+
+.SideText3{
+    margin-top: -15%;
+    margin-left: 15%;
+}
+
+.SideText4{
+    margin-right: 10%;
+    margin-top: -13%;
+}
+
+.Sidetext5{
+    margin-top: -15%;
+    margin-left: 15%;
+}
+
+p{
+    font-size: 120%;
+}
+
+.Offset1{
+    margin-left: 10%;
+}
+
+.TitleSpace{
+    margin-top: 5%;
+}
+
+.hidden{
+    color: white;
+}
