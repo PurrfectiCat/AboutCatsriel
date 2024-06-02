@@ -3,6 +3,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
+    text-align: center; /* Ensure everything starts centered */
 }
 
 .Box {
@@ -19,13 +20,12 @@ body {
     height: auto;
     white-space: nowrap;
     border-radius: 5%;
-    display: block;
     margin: 20px auto;
 }
 
 .SideText, .SideText2, .SideText3, .SideText4, .Sidetext5 {
-    text-align: left;
     margin: 20px;
+    text-align: left;
 }
 
 p {
@@ -59,6 +59,7 @@ p {
 
     .SideText, .SideText2, .SideText3, .SideText4, .Sidetext5 {
         margin: 15px 5%;
+        text-align: center; /* Center text for better readability */
     }
 
     .Offset1 {
@@ -75,6 +76,7 @@ p {
     .SideText, .SideText2, .SideText3, .SideText4, .Sidetext5 {
         margin: 10px 2%;
         font-size: 100%;
+        text-align: center; /* Center text for better readability */
     }
 
     .Offset1 {
